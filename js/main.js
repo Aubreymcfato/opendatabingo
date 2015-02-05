@@ -2,18 +2,17 @@ var source   = $("#excuses-template").html();
 var template = Handlebars.compile(source);
 var data1 = { excuse: [
 { id: "1", 
-	title: "Ci esporremo allo spam", 
+	title: "Wikipedia non è affidabile!", 
 	answers: [ 
-		{answer: "Non è necessario includere gli indirizzi email nei dataset."},
-		{answer: "E comunque i vostri indirizzi email sono già sul sito!"},
-		{answer: "Esistono i filtri anti-spam."},
-		{answer: "In generale, si può lasciare ai singoli la decisione di includere o meno l’email."}
+		{answer: "È vero, spesso non lo è, ma neanche le altre enciclopedie, giornali, siti, blog. Nessuno è *sempre* affidabile."},
+		{answer: "Wikipedia, in media, è affidabile. Se abbastanza persone hanno contribuito alla pagina, c'è una buona probabilità che le informazioni siano state verificate."},
+		{answer: "Dipende dall'articolo che stai guardando."},
 	]
 },
 {	id: "2",
-	title: "I terroristi potrebbero utilizzare questi dati", 
+	title: "Chi controlla?", 
 	answers: [
-		{answer: "Solitamente questa scusa la utilizza solo chi non vuole fare nulla in materia - e comunque è una scusa che non si regge in piedi."},
+		{answer: "La comunità."},
 		{answer: "Potrebbe essere un argomento valido, nel caso si parli di armi (anche nucleari, chimiche o batteriologiche) o di informazioni che renderebbero degli individui come un “obbiettivo” (come i nomi di ricercatori che stanno conducendo esperimenti in un ambito controverso, come i test su animali). Questi sono dubbi legittimi."},
 		{answer: "I dati sensibili, tuttavia, possono essere comunque ottenuti con altri mezzi. Per esempio, i punti di incontro in un edificio in caso di incendio possono facilmente essere individuati: i segnali sono evidenti e chiunque li nota semplicemente passando. In altre parole, persone intenzionate a scoprire queste informazioni le otterrebbero comunque, dunque ci sono pochi rischi (o non ce ne sono affatto) nel rendere questi dati riutilizzabili."},
 		{answer: "Si può creare un subset di dati che potrebbe ridurre o eliminare questo rischio?"},
@@ -21,26 +20,24 @@ var data1 = { excuse: [
 	]
 },
 {	id: "3",
-	title: "Qualcuno potrebbe chiamarci e chiederci cose", 
+	title: "Chi decide?", 
 	answers: [
-		{answer: "Questa è la classica obiezione posta da coloro che si sentono già oberati di lavoro e/o che non considerano questo compito come parte del loro lavoro. Bisogna chiedere ai loro superiori se questo costituisca davvero un problema per le loro funzioni."}
+		{answer: "La comunità."}
 	]
 },
 { id: "4",
-	title: "Le persone interpreteranno i dati in maniera scorretta",
+	title: "Chi è la comunità?",
 	answers: [
-		{answer: "Scrivete una documentazione su come i dati dovrebbero essere interpretati."},
-		{answer: "Siate pronti a fornire aiuto e chiarimenti a queste persone; coloro che fraintendono il significato dei dati per errore saranno grati dell’aiuto."},
-		{answer: "La pubblicazione può essere utile per contrastare una rappresentazione fuorviante (ad es. di dati acquisiti tramite la normativa sul diritto d’accesso di cui alla Legge 241/1990 e sul diritto di accesso civico di cui al D. Lgs. 33/2013), poiché si potranno indicare rapidamente i veri dati sul web per confutare l’errata interpretazione."}
+		{answer: "Tutti quelli che vogliono esserlo. Anche tu."},
+		{answer: "La comunità è formata da persone che si divertono a stare su Wikipedia, a migliorare le voci, a renderla un'enciclopedia sempre più completa e corretta."},
 	]
 },
 {
 	id: "5",
-	title: "Il dataset è troppo grande", 
+	title: "Posso sempre fidarmi di Wikipedia?", 
 	answers: [
-		{answer: "Probabilmente non è grande come pensano (a meno che si stia parlando del CERN)."},
-		{answer: "I titolari dei dati sono probabilmente fieri delle dimensioni del loro dataset, quindi non insultarli dichiarando che non è qualcosa di veramente grosso."},
-		{answer: "Chiedi se sono favorevoli a effettuare degli esperimenti (e mostra con gentilezza quanto sia pratico/semplice farlo)"}
+		{answer: "No."},
+		{answer: "No, e non dovresti mai fidarti di niente che leggi su Internet. O su carta. O che senti al bar, da un politico, anche da un esperto. Tutti possiamo sbagliare, tuti abbiamo dei pregiudizi, non sempre diciamo cose che abbiamo verificato di persona."},
 	]
 },
 {	id: "6",
